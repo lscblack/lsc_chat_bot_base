@@ -3,7 +3,8 @@ from embeddings import get_embeddings
 from vector_db import store_embeddings, query_embedding
 import ollama
 
-current_model = "llama3"
+# Default model to use
+current_model = "deepseek-r1" 
 
 def prepare():
     texts = load_text_documents("./data")
